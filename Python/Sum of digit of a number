@@ -1,0 +1,14 @@
+# Define the limit
+limit = 500
+
+# Initialize the total sum to 0
+total_sum = 0
+
+# Iterate through numbers from 0 to limit-1
+for number in range(limit):
+    # Check if the number is a multiple of 3 or 5
+    if number % 3 == 0 or number % 5 == 0:
+        total_sum += number
+
+# Print the result
+print(f"The sum of multiples of 3 or 5 below {limit} is {total_sum}.")
