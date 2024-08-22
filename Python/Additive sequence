@@ -1,0 +1,9 @@
+# Define the sequence of numbers
+sequence = [1, 2, 3, 5, 8, 13]  # Replace with your sequence
+
+# Check if the sequence is an additive sequence
+if len(sequence) < 3:
+    print("The sequence is an additive sequence.")
+else:
+    is_additive = all(sequence[i] == sequence[i - 1] + sequence[i - 2] for i in range(2, len(sequence)))
+    print("The sequence is an additive sequence." if is_additive else "The sequence is not an additive sequence.")
