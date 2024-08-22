@@ -1,0 +1,6 @@
+n=200
+sumofsq=sum(i*i for i in range(1,n+1))
+sumofnum=sum(i for i in range(1,n+1))
+sqofsum=sumofnum*sumofnum
+diff=sqofsum-sumofsq
+print(diff)
