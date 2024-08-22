@@ -1,0 +1,11 @@
+# Define the upper limit
+upper_limit = 50
+# Define the digit to skip
+digit_to_skip = '9'
+
+# Iterate through the range of natural numbers
+for number in range(16, upper_limit + 1):
+    # Convert the number to a string and check if it contains the digit to skip
+    if digit_to_skip in str(number):
+        continue  # Skip the current iteration if the digit is found
+    print(number)
