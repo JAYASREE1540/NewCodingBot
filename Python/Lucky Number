@@ -1,17 +1,12 @@
-n = 1412
-# Initialize sum and product variables
-su = 0
-pro = 1
-# Copy of the number for processing
-original_n = n
-# Process the number to calculate the sum and product of its digits
-while n > 0:
-    rem = int(n % 10)  # Get the last digit
-    su += rem          # Add the digit to the sum
-    pro *= rem         # Multiply the digit to the product
-    n = int(n / 10)    # Remove the last digit
-# Check if the sum and product of digits are equal
-if su == pro:
-    print("Lucky number")
+n=1412
+su=0
+pro=1
+while n>0:
+    re=n%10
+    su+=re
+    pro*=re
+    n=n//10
+if su==pro:
+    print("Lucky Number")
 else:
-    print("Not lucky")
+    print("Not Lucky Number")
