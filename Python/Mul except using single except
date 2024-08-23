@@ -1,0 +1,10 @@
+try:
+    num = int(input("Enter a number: "))
+    result = 100 / num
+    # Attempt to access an element from a list
+    my_list = [1, 2, 3]
+    print(my_list[num])
+    
+except (ValueError, ZeroDivisionError, IndexError) as e:
+    print(f"An error occurred: {e}")
+
