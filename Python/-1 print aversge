@@ -1,0 +1,23 @@
+# Define the list of numbers
+numbers = [5, -1, 3, 2, -1, 8, 7]  # Replace this list with your desired values
+
+# Calculate the average of numbers excluding -1
+total = 0
+count = 0
+for num in numbers:
+    if num != -1:
+        total += num
+        count += 1
+
+average = total / count if count > 0 else 0
+
+# Replace -1 with the calculated average
+for i in range(len(numbers)):
+    if numbers[i] == -1:
+        numbers[i] = average
+
+# Sort the list in ascending order
+numbers.sort()
+
+# Print the result
+print("Sorted list with -1 replaced by average:", numbers)
