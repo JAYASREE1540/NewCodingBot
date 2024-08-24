@@ -1,0 +1,13 @@
+# Input number
+number = 12345  # Replace this with the number you want to check
+
+# Initialize sum
+digit_sum = 0
+
+# Calculate sum of digits
+while number > 0:
+    digit_sum += number % 10
+    number //= 10
+
+# Print the result
+print("The sum of the digits is:", digit_sum)
