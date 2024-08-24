@@ -1,0 +1,30 @@
+import numpy as np
+
+# Define the matrix
+matrix = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])  # Replace this matrix with your desired values
+
+# Compute row sums
+row_sums = np.sum(matrix, axis=1)
+
+# Compute column sums
+column_sums = np.sum(matrix, axis=0)
+
+# Compute diagonal sums
+main_diagonal_sum = np.sum(np.diagonal(matrix))
+anti_diagonal_sum = np.sum(np.diagonal(np.fliplr(matrix)))
+
+# Print the results
+print("Matrix:")
+print(matrix)
+print("\nRow sums:")
+print(row_sums)
+print("\nColumn sums:")
+print(column_sums)
+print("\nMain diagonal sum:")
+print(main_diagonal_sum)
+print("\nAnti-diagonal sum:")
+print(anti_diagonal_sum)
