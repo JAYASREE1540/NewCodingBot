@@ -1,0 +1,11 @@
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # Example array
+
+sum_even = 0
+
+print("Even numbers in the array:")
+for number in array:
+    if number % 2 == 0:
+        print(number)
+        sum_even += number
+
+print("Sum of even numbers:", sum_even)
