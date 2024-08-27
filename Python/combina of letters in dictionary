@@ -1,0 +1,8 @@
+from itertools import product
+
+# Define the dictionary with lists of letters
+letter_dict = {'key1': ['a', 'b'], 'key2': ['c', 'd'], 'key3': ['e', 'f']}
+
+# Generate and print all combinations
+for combo in product(*letter_dict.values()):
+    print(''.join(combo))
