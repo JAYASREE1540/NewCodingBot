@@ -1,0 +1,8 @@
+# Get user input
+n = int(input("Enter the value of n: "))
+
+# Calculate the sum of squares
+sum_of_squares = n * (n + 1) * (2 * n + 1) // 6
+
+# Print the result
+print(f"The sum of squares is: {sum_of_squares}")
